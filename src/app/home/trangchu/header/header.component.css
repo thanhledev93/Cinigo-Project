@@ -1,0 +1,11 @@
+.header-mt {
+  margin-top: 7rem;
+}
+.btn-link{
+  color: var(--mainBlack);
+  font-size: 1rem;
+  text-decoration: none !important;
+}
+.btn-link:hover{
+  color: var(--mainGreen) !important;
+}

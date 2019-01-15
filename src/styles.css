@@ -1,0 +1,76 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+  --mainBrown: #2f2f2f;
+  --mainYellow: #ffec17;
+  --mainGreen: #88bf01;
+  --mainBlue: #0ea9eb;
+  --mainBlack: #29293a;
+  --mainWhite: #fff;
+  --mainGrey: #858588;
+  --secondaryGrey: #f2f3f9;
+}
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  box-sizing: border-box;
+}
+.row {
+  margin: 0;
+}
+
+/*MEDIA QUAERY */
+@media (max-width: 575.98px) {
+  .phimList{
+    margin: 0;
+  }
+  .phimList .btn-movie, .tintucphim .btn-tintuc{
+    padding: 0!important;
+    width: 12rem;
+    height: 5rem;
+    font-size: 1.1rem;
+  }
+  .content{
+    height: 400px;
+    width: 300px;
+    margin: 0 auto ;
+    border: 1px solid #88bf01;
+  }
+
+  .movie-item__title{
+    text-align: center;
+    padding-top: 1rem;
+  }
+  .movie-item__title p{
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .phimList{
+    margin: 0;
+  }
+  .phimList .btn-movie, .tintucphim .btn-tintuc{
+    padding: 0!important;
+    width: 14rem;
+    height: 5rem;
+    font-size: 1.4rem;
+  }
+  .movie-item__title{
+    text-align: center;
+    padding-top: 1rem;
+  }
+  .movie-item__title p{
+    font-size: 1.6rem;
+  }
+}

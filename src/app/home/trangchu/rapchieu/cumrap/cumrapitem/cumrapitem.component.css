@@ -1,0 +1,15 @@
+/*============ Cụm Rạp Item ==========*/
+.cumrap-item img{
+  height: 60px;
+}
+.cumrap-item{
+  opacity: 0.5;
+  transition: all .3s;
+  padding-left: 15%;
+  padding: 2rem 0rem;
+}
+.cumrap-item:hover, .active{
+  opacity: 1;
+}
+a{
+  cursor: pointer;}

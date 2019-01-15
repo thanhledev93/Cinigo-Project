@@ -1,0 +1,51 @@
+/*============== Slider ==========*/
+#header-slider .carousel-inner{
+  width: 100% !important;
+}
+.carousel-item img{
+  width: 100%;
+  height: auto;
+}
+.carousel-caption{
+  bottom: 20%;
+  left: 6rem;
+  width: 40%;
+  text-align: left;
+}
+.carousel-caption h3{
+  color: #8c9194;
+}
+.carousel-caption p{
+  font-size: 2rem;
+}
+.carl-control {
+  height: 1rem;
+  position: relative;
+  margin-top: -10rem;
+}
+.carousel-control-prev{
+  background-color: #88bf01;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100px;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 5rem;
+
+}
+.carousel-control-prev:hover{
+  background-color: var(--mainBlue);
+}
+.carousel-control-next:hover{
+  background-color: var(--mainBlue);
+}
+.carousel-control-next{
+  background-color: #88bf01;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 10rem;
+  opacity: 1;
+  position: absolute;
+  left: 11rem;
+}

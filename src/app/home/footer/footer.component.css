@@ -1,0 +1,26 @@
+/*========= Footer ==========*/
+.footer-bg{
+  background-color: #2F2F2F;
+  height: auto;
+  font-size: 1.6rem;
+  padding: 3rem 0rem;
+}
+.doitac > li{
+  margin: 10px 10px;
+}
+.doitac > li > img{
+  height: 40px;
+}
+.footer-text{
+  color: var(--mainGreen);
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+.hr-footer{
+  background: linear-gradient(to right,#0ea9eb 50%,#88bf01 150%);
+  border: none;
+  height: 4px;
+  width: 100%;
+  margin: 20px 0 40px 0;
+}

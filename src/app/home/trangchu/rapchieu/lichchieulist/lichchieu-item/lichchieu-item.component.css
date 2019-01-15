@@ -1,0 +1,24 @@
+/*============= Lịch Chiếu Item===========*/
+.lichchieu-item{
+  padding: 1.5rem 0;
+  font-size: 1.4rem;
+}
+.lichchieu-item--tuoi{
+  padding: 3px 10px;
+  border-radius: 5px;
+  background-color: #FF2409;
+  color: var(--mainWhite);
+  margin-right: 10px;
+}
+.lichchieu-item--time li{
+  padding: 5px 10px;
+}
+.lichchieu-item--time > li > a{
+  text-decoration: none;
+  color: var(--mainGreen);
+  font-size: 20px;
+  font-weight: 600;
+}
+.lichchieu-item--time > li > a:hover{
+  color: var(--mainBlue);
+}

@@ -1,0 +1,21 @@
+/*============ Tin Tuc Phim ==============*/
+.tintuc--height{
+  height: auto;
+  font-size: 1.6rem;
+}
+.btn-tintuc{
+  background-color: var(--mainWhite);
+  border-radius: 400px;
+  border: 2px solid #D9DEE6;
+  height: 50px;
+  width: 150px;
+  font-weight: 600;
+  color: #5C6164;
+  transition: all 0.2s ease-in-out;
+  font-size: 1.6rem;
+}
+.btn-tintuc:hover{
+  background-color: var(--mainBlue);
+  border: none;
+  color: var(--mainWhite);
+}

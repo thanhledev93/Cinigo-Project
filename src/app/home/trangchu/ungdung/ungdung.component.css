@@ -1,0 +1,55 @@
+/*=========== Ứng Dụng ==============*/
+.app{
+  position: relative;
+}
+.bg-color{
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url("../../../../assets/img/list-film-bg.jpg");
+  height: auto;
+  padding: 2rem 0 8rem 0;
+}
+
+
+.app-slider{
+  margin-top: 80px;
+}
+.app-slider-bg{
+  background: url("../../../../assets/img/app-img.png")center/cover no-repeat;
+  height: 40rem;
+  width: 40rem;
+  margin: 0 auto;
+  position: relative;
+}
+.app-slider--position{
+  position: absolute;
+  top: 11.5%;
+  left: 28.5%;
+  width: 80%;
+  height: 130%;
+}
+.carousel-inner{
+  width: 54%;
+  height: 59%;
+}
+
+/*-----*/
+
+
+.btn--app{
+  font-size: 1.4rem;
+  background-color: var(--mainGreen);
+  border-radius: 400px;
+  height: 50px;
+  font-weight: 600;
+  color: var(--mainWhite);
+  transition: all 0.1s ease-in-out;
+}
+.btn--app:hover{
+  background-color: var(--mainBlue);
+}
+.app-hr{
+  background: linear-gradient(to right,#0ea9eb 50%,#88bf01 150%);
+  border: none;
+  height: 4px;
+  width: 30%;
+  margin: 20px 0;
+}

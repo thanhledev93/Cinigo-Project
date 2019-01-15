@@ -1,0 +1,46 @@
+/*============= Tin dien anh ==========*/
+.tintucfilm-small>li{
+  margin-bottom: 30px;
+}
+.tintucfilm-small>li>a{
+  text-decoration: none;
+}
+.tintucfilm-small--text{
+  color: var(--mainGreen);
+  transition: all .3s;
+  font-size: 1.8rem;
+  word-spacing: 1px;
+  padding: 0;
+}
+.tintucfilm-small--text:hover{
+  color: var(--mainBlue);
+}
+.tintucfilm-small--img img{
+  border-radius: 5px;
+}
+
+/*============= Dien anh item ============*/
+.tintuc-item a{
+  text-decoration: none;
+}
+.card-body--heading{
+  font-size: 20px;
+  color: var(--mainGreen);
+}
+.card-body--heading:hover{
+  color: var(--mainBlue);
+}
+
+.btn-tintuc-chitiet{
+  background-color: var(--mainGreen);
+  border-radius: 400px;
+  padding: 10px 30px;
+  font-weight: 600;
+  color: var(--mainWhite);
+  transition: all 0.1s ease-in-out;
+  font-size: 1.4rem;
+  margin: 2rem 0;
+}
+.btn-tintuc-chitiet:hover{
+  background-color: var(--mainBlue);
+}

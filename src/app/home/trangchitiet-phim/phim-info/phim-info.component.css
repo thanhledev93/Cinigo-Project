@@ -1,0 +1,110 @@
+.titlePhim{
+  margin-top: 20rem;
+}
+.titlePhim__img{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 2px 9px 0 rgba(0,0,0,0.1),
+  0 2px 8px 0 rgba(0,0,0,0.7);
+}
+
+
+
+.flipcard {
+  font-size: 1.6rem;
+  margin: 25px auto;
+  height: 470px;
+  width: 320px;
+  position: relative;
+  perspective: 700px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  text-align: center;
+  line-height: 10px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.flipcard_front, .flipcard_back {
+  backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: all .5s ease;
+  transition: all .7s ease;
+}
+
+.flipcard_front {
+  -webkit-transform: translate(-50%, -50%) rotateY(0deg);
+  -ms-transform: translate(-50%, -50%) rotateY(0deg);
+  transform: translate(-50%, -50%) rotateY(0deg);
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.flipcard:hover .flipcard_front {
+  -webkit-transform: translate(-50%, -50%) rotateY(180deg);
+  -ms-transform: translate(-50%, -50%) rotateY(180deg);
+  transform: translate(-50%, -50%) rotateY(180deg);
+}
+
+.flipcard_back {
+  -webkit-transform: translate(-50%, -50%) rotateY(180deg);
+  -ms-transform: translate(-50%, -50%) rotateY(180deg);
+  transform: translate(-50%, -50%) rotateY(180deg);
+  color: white;
+  background: linear-gradient(120deg, rgb(100, 100, 110), rgb(20, 30, 30) 20%, rgb(20, 30, 30) 80%, rgb(100, 100, 110));
+}
+
+.flipcard:hover .flipcard_back {
+  -webkit-transform: translate(-50%, -50%) rotateY(360deg);
+  -ms-transform: translate(-50%, -50%) rotateY(360deg);
+  transform: translate(-50%, -50%) rotateY(360deg);
+}
+
+.flipcard_description {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 8% 6%;
+  overflow: hidden;
+}
+
+.flipcard_description a {
+  background: transparent;
+  border: solid 1px white;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 7px 20px;
+}
+
+.flipcard_description a:hover {
+  color: black;
+  background: white;
+  cursor: pointer;
+}
+
+.flipcard_description h3 {
+  color: #c6a869;
+  font-size: 2rem;
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+.flipcard_description p {
+  opacity: 0.7;
+  line-height: 1.4;
+}
+
+.flipcard_description img {
+  height: 2rem;
+  margin: 2% 1%;
+}

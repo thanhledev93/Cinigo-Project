@@ -1,0 +1,7 @@
+<ng-container *ngIf="!gheItem.trangthai; else ghedaduocchon">
+  <button class="btn btn-secondary btn-ghe" [ngClass]="{'btn-success': status}" (click)="datGhe()">{{gheItem.soGhe}}</button>
+</ng-container>
+
+<ng-template #ghedaduocchon>
+  <button class="btn btn-danger btn-ghe" disabled style="cursor: not-allowed;">{{gheItem.soGhe}}</button>
+</ng-template>

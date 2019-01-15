@@ -1,0 +1,17 @@
+<!--List Phim Section-->
+<section class="phimList">
+  <div class="container mt-5">
+    <div class="row text-center">
+      <div class="col-12 mt-5">
+        <button [routerLink]="['./']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"  class="btn btn-movie my-5 mr-4 text-capitalize">Phim đang chiếu</button>
+        <button [routerLink]="['./phimsapchieu']" routerLinkActive="active" class="btn btn-movie my-5 text-capitalize">Phim sắp chiếu</button>
+      </div>
+    </div>
+
+
+    <router-outlet></router-outlet>
+
+
+  </div>
+</section>
+<!--End List Phim Section-->

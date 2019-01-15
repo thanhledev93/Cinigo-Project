@@ -1,0 +1,30 @@
+/*=========== Rạp Item ===========*/
+a{
+  cursor: pointer;
+}
+.rap-item-wrap{
+  opacity: 0.5;
+  transition: all .3s;
+  font-size: 1.4rem;
+  padding: 1.5rem 0;
+}
+.rap-item-wrap:hover, .active{
+  opacity: 1;
+}
+
+.rap-item__link{
+  text-decoration: none !important;
+  color: #8c9194;
+}
+.rap-item img{
+  height: 60px;
+  padding-right: 20px ;
+}
+.rap-item__content--heading{
+  color: var(--mainGreen);
+  font-weight: 600;
+}
+.rap-item__content--chitiet{
+  padding: 0;
+  margin: -10px 0 0 0px;
+}

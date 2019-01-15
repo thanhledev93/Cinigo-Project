@@ -1,0 +1,29 @@
+
+  <div class="content">
+    <img [src]="phimitem.imagePath" alt="">
+    <a class="btn more videolink" data-toggle="modal" [attr.data-target]="'#myTrailer' + phimitem.maPhim">
+      <i class="fas fa-play fa-3x"></i>
+    </a>
+
+    <!-- The Modal -->
+    <div class="modal fade" [id]="'myTrailer' + phimitem.maPhim" >
+      <div class="modal-dialog modal-dialog-centered" >
+
+        <div class="modal-content" >
+          <iframe class="d-none d-sm-none d-md-block d-lg-none d-xl-none;" style="transform: translateX(-5rem)" width="600" height="300" [src]="url" frameborder="0" allow="picture-in-picture" allowfullscreen></iframe>
+
+          <iframe class="d-none d-sm-none d-md-none d-lg-block d-xl-block;" style="transform: translateX(-25rem)" width="1000" height="500" [src]="url" frameborder="0" allow=" picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="movie-item__title--button mt-3"><button (click)="onMuave()" class="btn btn-muave px-5 py-2">Mua vé</button>
+    </div>
+
+  </div>
+  <div class="movie-item__title my-3 justify-content-between">
+    <div>
+      <a href="#">{{ phimitem.tenPhim }}</a>
+      <p class="text-muted">2018</p>
+    </div>
+  </div>

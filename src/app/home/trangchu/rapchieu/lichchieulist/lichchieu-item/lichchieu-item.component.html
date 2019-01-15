@@ -1,0 +1,19 @@
+<div class="lichchieu-item">
+  <div class="row">
+    <div class="col-2"><img src="../../../../../../assets/img/lichchieu-item-1.jpg" alt="" class="img-fluid"></div>
+    <div class="col-10">
+      <div class="font-weight-bold text-muted" ><span class="lichchieu-item--tuoi">C16</span>Robin Hood</div>
+      <div class="text-muted py-2">118 phút - 123Phim 7.8 - IMDb 5.3</div>
+
+    </div>
+  </div>
+  <div class="row py-3">
+    <div class="col-2"><img src="../../../../../../assets/img/lichchieu-item-dinhdangfilm.png" alt="dinh dang" class="img-fluid"></div>
+    <div class="col-10 d-flex flex-wrap">
+      <ul class="list-unstyled list-inline lichchieu-item--time">
+        <li class="list-inline-item" *ngFor="let thoigian of lichChieuItem.thoiGian" (click)="onLichchieuItem()"><a style="cursor: pointer">{{thoigian}}</a></li>
+
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="row thongtindatve-wrap mr-0 pr-0">
+  <div class="col-12 m-0 p-0">
+    <div class="giave text-center"> {{tong | number}} đ </div>
+    <hr>
+    <div class="thongtinphim">
+      <div class="row">
+        <div class="col-4"><img [src]="phim.imagePath" alt="" class="img-fluid"> </div>
+        <div class="col-8">
+          <p class="text-capitalize"> {{phim.tenPhim}}</p>
+          <p>Galaxy - Nguyễn Du</p>
+          <p>Hôm nay 13/01/2019 - 12:45 - RẠP 1</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="soghe text-danger"><span class="font-weight-bold mr-3">Ghế:</span> <span *ngFor="let ghe of ghedangdat">{{ghe.soGhe}}, </span></div>
+    <hr>
+
+    <h3>Hình thức thanh toán: </h3>
+    <label class="container">Thanh toán qua ZaloPay
+      <input type="radio" checked="checked" name="radio">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Thẻ tín dụng
+      <input type="radio" name="radio">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Thẻ ATM nội địa
+      <input type="radio" name="radio">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Thanh toán tại cửa hàng tiện ích
+      <input type="radio" name="radio">
+      <span class="checkmark"></span>
+    </label>
+    <button class="btn btn-success btn-datve">Đặt vé</button>
+  </div>
+</div>

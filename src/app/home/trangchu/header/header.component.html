@@ -1,0 +1,38 @@
+<!--Header-->
+<header class="header header-mt">
+  <div class="container px-0 my-3 d-none d-sm-none d-md-none d-lg-block d-lg-flex">
+    <div class="row justify-content-center text-center align-items-center ">
+      <div class="col-md-2">
+        <img src="../../../../assets/img/logo.jpg" alt="logo" class="img-fluid logo-box__img">
+      </div>
+      <div class="col-md-8">
+        <app-searchform></app-searchform>
+      </div>
+
+      <div class="col-md-2 p-0 m-0 d-flex justify-content-between">
+        <div *ngIf="authService.isAuthenticated()">
+          <a style="cursor: pointer" class="btn btn-link mt-4">
+            <span><i class="fas fa-user fa-2x"></i></span>
+            <p style="font-size: 15px">Hello</p>
+          </a>
+        </div>
+        <div *ngIf="authService.isAuthenticated()">
+          <a style="cursor: pointer" class="btn btn-link mt-4" (click)="onLogout()">
+            <span><i class="fas fa-sign-out-alt fa-2x"></i></span>
+            <p style="font-size: 15px">Đăng xuất</p>
+          </a>
+        </div>
+
+        <ng-template [ngIf]="!authService.isAuthenticated()">
+          <app-signinform></app-signinform>
+          <app-signup></app-signup>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid p-0 m-0 d-none d-md-block mt-3">
+    <app-slider></app-slider>
+  </div>
+</header>
+<!--End header-->

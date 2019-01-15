@@ -1,0 +1,27 @@
+.phimList{
+  margin-top: 12rem;
+  margin-bottom: 5rem;
+}
+
+.btn-movie, .btn-movie:active{
+  background-color: var(--mainWhite);
+  border-radius: 400px;
+  border: 2px solid #D9DEE6;
+  height: 6rem;
+  width: 16rem;
+  font-weight: 600;
+  color: #5C6164;
+  transition: all 0.2s ease-in-out;
+  font-size: 1.6rem;
+  box-shadow: none !important;
+}
+.btn-movie:hover{
+  background-color: var(--mainBlue);
+  border: none;
+  color: var(--mainWhite);
+}
+.active {
+  background-color: var(--mainBlue);
+  border: none;
+  color: var(--mainWhite);
+}

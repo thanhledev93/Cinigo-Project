@@ -1,0 +1,9 @@
+<div class="row justify-content-center mb-5">
+
+  <div class="col-8 ghe--align mb-5">
+    <app-ghe *ngFor="let ghe of ghes" [gheItem]="ghe" (emitStatus)="datGheParent($event, ghe)"></app-ghe>
+  </div>
+
+
+</div>
+
